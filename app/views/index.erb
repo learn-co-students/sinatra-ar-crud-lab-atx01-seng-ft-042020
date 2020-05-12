@@ -1,0 +1,6 @@
+<ul>
+    <% @articles.each {|a|  %>
+    <li><h1><a href=<%= "/articles/#{a.id}" %>><%= a.title %></a></h1></li>
+    <p><%= a.content %></p>
+    <% } %>
+</ul>
